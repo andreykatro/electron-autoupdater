@@ -16,7 +16,8 @@
   },
   "build": {
     "appId": "com.coderat.autoupdater",
-    "productName": "Autoupdater app",
+    "productName": "Autoupdater",
+    "artifactName": "${productName}-Setup-${version}-${os}-${arch}.${ext}",
     "win": {
       "target": "nsis"
     },
