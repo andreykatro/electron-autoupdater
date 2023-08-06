@@ -1,0 +1,41 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "My test electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec electron .",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/andreykatro/electron-autoupdater.git",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.coderat.autoupdater",
+    "productName": "Autoupdater app",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "Andrii Trofimuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreykatro/electron-autoupdater/issues"
+  },
+  "homepage": "https://github.com/andreykatro/electron-autoupdater#readme",
+  "devDependencies": {
+    "electron": "^25.4.0",
+    "electron-builder": "^24.6.3",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.1"
+  }
+}
